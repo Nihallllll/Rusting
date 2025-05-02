@@ -1,4 +1,4 @@
-mod add;
+mod hello;
 fn main() {
-   add::add();
+   hello::say_hello();
 }
