@@ -15,3 +15,7 @@ pub fn owner2(s: String) -> usize{
     println!("this is from owner2 function :{}",s);
     return s.len();
 }
+
+//   thing to learn is :
+//   owner is one , and 
+//   every value in rust has a owner 
