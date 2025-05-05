@@ -4,6 +4,9 @@ mod vector;
 mod bool;
 mod ownership;
 mod borrowing;
+mod mutable_ref;
+// mod struct_and_impl;
+mod _impl;
 fn main() {
    hello::say_hello();
    add::add(4, 5);
@@ -12,4 +15,7 @@ fn main() {
    ownership::string();
    borrowing::string();
    borrowing::string1();
+   mutable_ref::print();
+   _impl::give_pbh(2, 3, 4);
+   
 }

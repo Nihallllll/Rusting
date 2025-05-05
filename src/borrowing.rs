@@ -11,7 +11,7 @@ fn get_len(s : String) -> (usize,String){
 //also using refrence
 pub fn string1(){
     let str = String::from("Nihal");
-    let len = get_len1(&str);
+    let _len = get_len1(&str);
     println!("this is using & : {}",str);
 }
 fn get_len1(s : &String) -> usize{
