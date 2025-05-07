@@ -7,7 +7,7 @@ pub fn owner() {
 pub fn string(){
     let name = String::from("nihal");
     println!("{}",name);
-    let s = owner2(name);//name is now not the owner , its the s variable in the owner2
+    let s = owner2(name);//name is now not the owner , its the s variable in the owner2 function
     
     println!("another one :{}",s);
 }

@@ -7,6 +7,8 @@ mod borrowing;
 mod mutable_ref;
 // mod struct_and_impl;
 mod _impl;
+mod tuple;
+mod refrence;
 fn main() {
    hello::say_hello();
    add::add(4, 5);
@@ -17,5 +19,13 @@ fn main() {
    borrowing::string1();
    mutable_ref::print();
    _impl::give_pbh(2, 3, 4);
-   
+   tuple::tuple();
+   refrence::reference();
+   // let mut str = String::from("hello");
+   // let w1 =&mut str;
+   // w1.push_str("hip te clip");
+   // println!("{}",w1);
+   // let w2 =&mut str;
+   // w2.push_str("biba mare sir ta ");
+   // println!("{}",w2);
 }
