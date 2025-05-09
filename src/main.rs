@@ -9,6 +9,13 @@ mod mutable_ref;
 mod _impl;
 mod tuple;
 mod refrence;
+mod array;
+mod shadowing;
+mod for_loop;
+mod mat_ch;
+mod input_in_rust;
+mod enum_with_values;
+mod defined_enums;
 fn main() {
    hello::say_hello();
    add::add(4, 5);
@@ -21,11 +28,11 @@ fn main() {
    _impl::give_pbh(2, 3, 4);
    tuple::tuple();
    refrence::reference();
-   // let mut str = String::from("hello");
-   // let w1 =&mut str;
-   // w1.push_str("hip te clip");
-   // println!("{}",w1);
-   // let w2 =&mut str;
-   // w2.push_str("biba mare sir ta ");
-   // println!("{}",w2);
+   array::arr();
+   shadowing::shadow();
+   for_loop::for_loop();
+   mat_ch::mat_ch();
+   input_in_rust::mat_ch();
+   enum_with_values::enum_with_val();
+   defined_enums::defined_enums();
 }
