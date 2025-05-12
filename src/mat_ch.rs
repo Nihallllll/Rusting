@@ -8,7 +8,7 @@ pub fn mat_ch(){
     }
     let num = 5;
     match num{
-        x if is_even(x)=>println!("true"),
+        y if is_even(y)=>println!("true"),
         x if !is_even(x)=>println!("false"),
         _=>println!("Number not found")
     }
