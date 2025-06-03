@@ -20,5 +20,5 @@
         h: c
     };
     println!("height : {}, Base : {} , hypotenues : {}",triangle.p,triangle.b,triangle.h);
-    println!("the area is : {:?}", triangle.area());
+    println!("the area is : {}", triangle.area());
     }

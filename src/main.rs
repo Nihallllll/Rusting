@@ -1,3 +1,9 @@
+use crate::slices::slices;
+
+
+
+
+
 mod hello;
 mod add;
 mod vector;
@@ -5,7 +11,7 @@ mod bool;
 mod ownership;
 mod borrowing;
 mod mutable_ref;
-// mod struct_and_impl;
+// mod s_and_t;
 mod _impl;
 mod tuple;
 mod refrence;
@@ -20,9 +26,11 @@ mod chrono;
 mod dotenv_env;
 mod generics_and_traits;
 mod generic_and_enums;
-mod traits_in_rust;
+// mod traits_in_rust;
+mod loops;
+mod slices;
 fn main() {
-   hello::say_hello();
+   hello::give_pbh(2, 3, 5);
    add::add(4, 5);
    bool::is_even(3);
    vector::vector();
@@ -44,7 +52,7 @@ fn main() {
    dotenv_env::read_env_file();
    generics_and_traits::res();
    generic_and_enums::generics_and_enums();
-   traits_in_rust::traits_in_rust();
+   // traits_in_rust::traits_in_rust();
 
    struct User {
       name: String ,
@@ -69,4 +77,12 @@ fn main() {
    }
    display(2, 3);
    display(u1, u2);
+
+   loops::loops();
+
+   let mut s = String::from("helloworld");
+   let res = slices(&s);
+   
+   println!("the string is {s} and the value is {res}");
+   s.clear();
 }
