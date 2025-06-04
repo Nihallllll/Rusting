@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+cargo = "0.88.0"
 chrono = "0.4.41"
 dotenv = "0.15.0"
+run = "0.1.0"

@@ -85,4 +85,22 @@ fn main() {
    
    println!("the string is {s} and the value is {res}");
    s.clear();
+
+   
+    println!("{}","Here are macros");
+    #[derive(Debug)]
+    struct User2 {
+        name: String,
+        age: u32
+    }
+    
+
+    let u = User2 {
+       name : String::from("Nihal"),
+       age: 22 
+    };
+    
+    println!("{:?}",u);
+
+
 }
