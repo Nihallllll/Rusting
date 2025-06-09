@@ -29,6 +29,8 @@ mod generic_and_enums;
 // mod traits_in_rust;
 mod loops;
 mod slices;
+mod serde;
+mod Brosh;
 fn main() {
    hello::give_pbh(2, 3, 5);
    add::add(4, 5);
@@ -101,6 +103,8 @@ fn main() {
     };
     
     println!("{:?}",u);
+    
 
-
+    serde::serde();
+    Brosh::borsh_example();
 }
